@@ -1,0 +1,60 @@
+<body>
+    <div id="contenedor1">
+        <p id="primero">Primer parrafo de prueba</p>
+    </div>
+    <script>
+        var primero = document.getElementById('primero');
+        console.log(primero.parentNode.nodeName); //DIV
+        console.log("Padre del padre: " + primero.parentNode.parentNode.nodeName); //BODY
+        console.log(primero);
+        console.log(primero.textContent);
+        primero.innerHTML = primero.innerHTML + " <br>inner";
+    </script>
+
+    <div id="contenedor2" style="border:thin solid silver; padding:.5em">
+
+        <p id="primer">Primer párrafo</p>
+        <p id="segundo">Segundo párrafo</p>
+        <p id="tercero">Tercer párrafo</p>
+    </div>
+    <script>
+        var contenedor = document.getElementById('contenedor2');
+        console.log("**** Contenedor 2 ******");
+        console.log(contenedor.firstElementChild.textContent); //Primer párrafo
+        console.log(contenedor.lastElementChild.textContent); //Tercer párrafo
+    </script>
+    <br>
+    <div id="contenedor3" style="border:thin solid green; padding: 5px">
+        <p id="c3_primero"> primer parrafo</p>
+        <p id="c3_segundo"> segundo parrafo</p>
+        <p id="c3_tercero"> tercer parrafo</p>
+    
+    </div>
+    <script>
+        console.log("***Contenedor 3 ******");
+        let c3_primero=document.getElementById("c3_primero");
+        let nodos="";
+       // console.log("Nodo hermano 1" + c3_primero.nextElementSibling.textContent);
+       // console.log("Nodo hermano 2" + c3_primero.nextElementSibling.nextElementSibling.textContent);
+       // console.log("Nodo hermano 2 previo" + c3_primero.previousSibling.textContent);  //no tiene previo
+
+        let contenedor3 = document.getElementById("contenedor3");
+        nodos = contenedor3.firstElementChild;
+        if (contenedor3.hasChildNodes()){
+            let i=0;
+            
+           do{
+            console.log("Bucle " , nodos.textContent);
+            nodos=nodos.nextElementSibling;
+            i++;
+           }while(i<contenedor3.children.length)
+
+        }
+        else 
+            contenedor3.appendChild("<p id=c3_cuarto> cuarto parrafo </p>");
+        
+            console.log(nodos);
+
+    </script>
+
+</body>

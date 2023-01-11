@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="scripts/eventos-imagen.js"></script>
+
+</head>
+<style>
+  img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .caja{
+    width:100%;
+    margin: 0 auto;
+    
+    text-align:center;
+  }
+</style>
+<body>
+  <div class="caja" id="caja">
+  <h1 id="h1">Repostajes</h1>
+  <div id="contenedor">
+    <img id="imagen1" src="images/coche.jpeg" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+           tiene una cabeza grande con dientes largos y afilados"></img>
+   <!-- <img id="imagen2" src="images/escuela1.png" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+           tiene una cabeza grande con dientes largos y afilados"></img>--> 
+  </div>
+<br>
+<br>
+Tiempo rodado:
+<select name="tiempo" id="tiempo" > 
+  <option value="04:15">04:15</option>
+  <option value="04:20">04:20 min.</option>
+  <option value="04:25">04:25 h.</option>
+  <option value="04:30">04:30 h.</option>
+  <option value="04:35">04:35 h.</option>
+  <option value="04:40">04:40 h.</option>
+  <option value="06:30">06:30 h.</option>
+  <option value="01:45">01:45 h.</option>
+  <option value="02:00">02:00 h.</option>
+  <option value="02:15">02:15 h.</option>
+  <option value="02:30">02:30 h.</option>
+  <option value="02:45">02:45 h.</option>
+  <option value="03:00">03:00 h.</option>
+  <option value="03:15">03:15 h.</option>
+  <option value="03:30">03:30 h.</option>
+  <option value="03:45">03:45 h.</option>
+  <option value="04:00">04:00 h.</option>
+  <option value="04:15">04:15 h.</option>
+  <option value="04:30">04:30 h.</option>
+  <option value="04:45">04:45 h.</option>
+  <option value="05:00">05:00 h.</option>
+  <option value="05:15">05:15 h.</option>
+  <option value="05:30">05:30 h.</option>
+  <option value="05:45">05:45 h.</option>
+  <option value="06:00">06:00 h.</option>
+  <option value="06:15">06:15 h.</option>
+  <option value="06:30">06:30 h.</option>
+  <option value="06:45">06:45 h.</option>
+  <option value="07:00">07:00 h.</option>
+  <option value="07:15">07:15 h.</option>
+  <option value="07:30">07:30 h.</option>
+  <option value="07:45">07:45 h.</option>
+  <option value="08:00">08:00 h.</option>
+  <option value="08:15">08:15 h.</option>
+  <option value="08:30">08:30 h.</option>
+  <option value="08:45">08:45 h.</option>
+  <option value="09:00">09:00 h.</option>
+  <option value="09:15">09:15 h.</option>
+  <option value="09:30">09:30 h.</option>
+  <option value="09:45">09:45 h.</option>
+  <option value="10:00">10:00 h.</option>
+  <option value="10:15">10:15 h.</option>
+  <option value="10:30">10:30 h.</option>
+  <option value="10:45">10:45 h.</option>
+  <option value="11:00">11:00 h.</option>
+  <option value="11:15">11:15 h.</option>
+  <option value="11:30">11:30 h.</option>
+  <option value="11:45">11:45 h.</option>
+  <option value="12:00">12:00 h.</option>
+  <option value="12:15">12:15 h.</option>
+  <option value="12:30">12:30 h.</option>
+  <option value="12:45">12:45 h.</option>
+  <option value="13:00">13:00 h.</option>
+  <option value="13:15">13:15 h.</option>
+  <option value="13:30">13:30 h.</option>
+  <option value="13:45">13:45 h.</option>
+  <option value="14:00">14:00 h.</option>
+  <option value="14:15">14:15 h.</option>
+  <option value="14:30">14:30 h.</option>
+  <option value="14:45">14:45 h.</option>
+  <option value="15:00">15:00 h.</option>
+  <option value="15:15">15:15 h.</option>
+  <option value="15:30">15:30 h.</option>
+  <option value="15:45">15:45 h.</option>
+  <option value="16:00">16:00 h.</option>
+  <option value="16:15">16:15 h.</option>
+  <option value="16:30">16:30 h.</option>
+  <option value="16:45">16:45 h.</option>
+  <option value="17:00">17:00 h.</option>
+  <option value="17:15">17:15 h.</option>
+  <option value="17:30">17:30 h.</option>
+  <option value="17:45">17:45 h.</option>
+  <option value="18:00">18:00 h.</option>
+  <option value="18:15">18:15 h.</option>
+  <option value="18:30">18:30 h.</option>
+  <option value="18:45">18:45 h.</option>
+  <option value="19:00">19:00 h.</option>
+  <option value="19:15">19:15 h.</option>
+  <option value="19:30">19:30 h.</option>
+  <option value="19:45">19:45 h.</option>
+  <option value="20:00">20:00 h.</option>
+  <option value="20:15">20:15 h.</option>
+  <option value="20:30">20:30 h.</option>
+  <option value="20:45">20:45 h.</option>
+  <option value="21:00">21:00 h.</option>
+  <option value="21:15">21:15 h.</option>
+  <option value="21:30">21:30 h.</option>
+  <option value="21:45">21:45 h.</option>
+  <option value="22:00">22:00 h.</option>
+  <option value="22:15">22:15 h.</option>
+  <option value="22:30">22:30 h.</option>
+  <option value="22:45">22:45 h.</option>
+  <option value="23:00">23:00 h.</option>
+  <option value="23:15">23:15 h.</option>
+  <option value="23:30">23:30 h.</option>
+  <option value="23:45">23:45 h.</option>
+  </select>
+<br>
+<br>
+  Nitro sobrante :
+<select name="nitro" id="sobrante" > 
+  <option value="5">5CC.</option>
+  <option value="6">6CC.</option>
+  <option value="7">7CC.</option>
+  <option value="20">20cc</option>
+  <option value="04:35">04:35 h.</option>
+  <option value="04:40">04:40 h.</option>
+  <option value="01:45">04:15 h.</option>
+  <option value="01:45">01:45 h.</option>
+  <option value="02:00">02:00 h.</option>
+  <option value="02:15">02:15 h.</option>
+  <option value="02:30">02:30 h.</option>
+  <option value="02:45">02:45 h.</option>
+  <option value="03:00">03:00 h.</option>
+  <option value="03:15">03:15 h.</option>
+  <option value="03:30">03:30 h.</option>
+  <option value="03:45">03:45 h.</option>
+  <option value="04:00">04:00 h.</option>
+  <option value="04:15">04:15 h.</option>
+  <option value="04:30">04:30 h.</option>
+  <option value="04:45">04:45 h.</option>
+  <option value="05:00">05:00 h.</option>
+  <option value="05:15">05:15 h.</option>
+  <option value="05:30">05:30 h.</option>
+  <option value="05:45">05:45 h.</option>
+  <option value="06:00">06:00 h.</option>
+  <option value="06:15">06:15 h.</option>
+  <option value="06:30">06:30 h.</option>
+  <option value="06:45">06:45 h.</option>
+  <option value="07:00">07:00 h.</option>
+  <option value="07:15">07:15 h.</option>
+  <option value="07:30">07:30 h.</option>
+  <option value="07:45">07:45 h.</option>
+  <option value="08:00">08:00 h.</option>
+  <option value="08:15">08:15 h.</option>
+  <option value="08:30">08:30 h.</option>
+  <option value="08:45">08:45 h.</option>
+  <option value="09:00">09:00 h.</option>
+  <option value="09:15">09:15 h.</option>
+  <option value="09:30">09:30 h.</option>
+  <option value="09:45">09:45 h.</option>
+  <option value="10:00">10:00 h.</option>
+  <option value="10:15">10:15 h.</option>
+  <option value="10:30">10:30 h.</option>
+  <option value="10:45">10:45 h.</option>
+  <option value="11:00">11:00 h.</option>
+  <option value="11:15">11:15 h.</option>
+  <option value="11:30">11:30 h.</option>
+  <option value="11:45">11:45 h.</option>
+  <option value="12:00">12:00 h.</option>
+  <option value="12:15">12:15 h.</option>
+  <option value="12:30">12:30 h.</option>
+  <option value="12:45">12:45 h.</option>
+  <option value="13:00">13:00 h.</option>
+  <option value="13:15">13:15 h.</option>
+  <option value="13:30">13:30 h.</option>
+  <option value="13:45">13:45 h.</option>
+  <option value="14:00">14:00 h.</option>
+  <option value="14:15">14:15 h.</option>
+  <option value="14:30">14:30 h.</option>
+  <option value="14:45">14:45 h.</option>
+  <option value="15:00">15:00 h.</option>
+  <option value="15:15">15:15 h.</option>
+  <option value="15:30">15:30 h.</option>
+  <option value="15:45">15:45 h.</option>
+  <option value="16:00">16:00 h.</option>
+  <option value="16:15">16:15 h.</option>
+  <option value="16:30">16:30 h.</option>
+  <option value="16:45">16:45 h.</option>
+  <option value="17:00">17:00 h.</option>
+  <option value="17:15">17:15 h.</option>
+  <option value="17:30">17:30 h.</option>
+  <option value="17:45">17:45 h.</option>
+  <option value="18:00">18:00 h.</option>
+  <option value="18:15">18:15 h.</option>
+  <option value="18:30">18:30 h.</option>
+  <option value="18:45">18:45 h.</option>
+  <option value="19:00">19:00 h.</option>
+  <option value="19:15">19:15 h.</option>
+  <option value="19:30">19:30 h.</option>
+  <option value="19:45">19:45 h.</option>
+  <option value="20:00">20:00 h.</option>
+  <option value="20:15">20:15 h.</option>
+  <option value="20:30">20:30 h.</option>
+  <option value="20:45">20:45 h.</option>
+  <option value="21:00">21:00 h.</option>
+  <option value="21:15">21:15 h.</option>
+  <option value="21:30">21:30 h.</option>
+  <option value="21:45">21:45 h.</option>
+  <option value="22:00">22:00 h.</option>
+  <option value="22:15">22:15 h.</option>
+  <option value="22:30">22:30 h.</option>
+  <option value="22:45">22:45 h.</option>
+  <option value="23:00">23:00 h.</option>
+  <option value="23:15">23:15 h.</option>
+  <option value="23:30">23:30 h.</option>
+  <option value="23:45">23:45 h.</option>
+  </select>
+</div>
+</body>
+
+</html>
