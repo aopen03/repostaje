@@ -36,7 +36,8 @@ function conversion(){
     console.log("DSfgasdfas" + segund);
    console.log("***Minutos " +min);
    console.log("***" +(segund-(min*60)) +" seg");
-   document.write("Puedes Rodar: " + min + " : " +(segund-(min*60))+"seg")
+   //document.write("Puedes Rodar: " + min + " : " +(segund-(min*60))+"seg")
+   document.getElementById("sol").textContent=("Puedes Rodar: " + min + " : " +(segund-(min*60))+"seg");
     
 }
 
@@ -44,6 +45,8 @@ let tiempo=0,tiempo_seg=0;;
 let sobrante=0;
 window.onload=function mover(){
     imagen1=document.getElementById("imagen1"); 
+   
+    console.log( document.getElementsByTagName('img').length)
     imagen2=document.getElementById("imagen1");
     document.getElementsByTagName('img')[0].addEventListener('mouseover',modifica,false);
    // document.getElementByTagName('img').addEventListener('mouseover',modifica,false);
@@ -52,5 +55,7 @@ window.onload=function mover(){
     imagen2.addEventListener('mouseout',original);
    
     document.getElementById("tiempo").addEventListener('change',function(){tiempo=document.getElementById("tiempo").value; calculo()})
-    document.getElementById("sobrante").addEventListener('change',function(){sobrante=document.getElementById("sobrante").value; console.log(sobrante)})
+    document.getElementById("sobrante").addEventListener('change',function(){sobrante=document.getElementById("sobrante").value;
+    calculo();
+     console.log(sobrante)})
 }
