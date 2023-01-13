@@ -1,21 +1,144 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Ejercicio 11 - DOM básico</title>
-
-<script src="scripts/ejer1.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="scripts/eventos-imagen.js"></script>
 
 </head>
+<style>
+  img {
+    width: 30%;
+    height: 30%;
+  }
 
+  .caja{
+    width:100%;
+    margin: 0 auto;
+    
+    text-align:center;
+  }
+</style>
 <body>
-<div id="informacion" style="border:thin solid silver; padding:.5em"></div>
+  <div class="caja" id="caja">
+  <h1 id="h1">Repostajes</h1>
+  <div id="contenedor">
+    <img id="imagen1" src="images/coche.jpeg" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+           tiene una cabeza grande con dientes largos y afilados">
+   <!-- <img id="imagen2" src="images/escuela1.png" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+           tiene una cabeza grande con dientes largos y afilados"></img>--> 
+  </div>
+<br>
+<br>
+Tiempo rodado:
+<select name="tiempo" id="tiempo" > 
+  <option value="04:15">04:15</option>
+  <option value="04:20">04:20 min.</option>
+  <option value="04:25">04:25 min.</option>
+  <option value="04:30">04:30 min.</option>
+  <option value="04:35">04:35 min.</option>
+  <option value="04:40">04:40 min</option>
+  <option value="04:45">04:45 min</option>
+<option value="04:50">04:50 min</option>
+    <option value="04:55">04:55 min</option>
+    <option value="05:00">05:00 min</option>
+  <option value="05:05">05:05 min</option>
+  <option value="05:10">05:10 min</option>
+  <option value="05:15">05:05 min</option>
+  <option value="05:20">05:20 min</option>
+  <option value="05:25">05:25 min</option>
+  <option value="05:30">05:30 min</option>
+  <option value="05:35">05:35 min</option>
+  <option value="05:40">05:40 min</option>
+  <option value="05:45">05:45 min</option>
+  <option value="05:50">05:50 min</option>
+  <option value="05:55">05:55 min</option>
+  <option value="06:00">06:00 min</option>
+  <option value="06:05">06:05 min</option>
+  <option value="06:10">06:10 min</option>
+  <option value="06:15">06:15 min</option>
+  <option value="06:20">06:20 min</option>
+  <option value="06:25">06:25 min</option>
+  <option value="06:30">06:30 min</option>
+  <option value="06:35">06:35 min</option>
+  <option value="06:40">06:40 min</option>
+  <option value="06:45">06:45 min</option>
+  <option value="08:15">06:50 min</option>
+  <option value="08:30">08:30 min</option>
+  <option value="08:45">08:45 min</option>
+  <option value="09:00">09:00 h.</option>
+  <option value="09:15">09:15 h.</option>
+  <option value="09:30">09:30 h.</option>
+  <option value="09:45">09:45 h.</option>
+  <option value="10:00">10:00 h.</option>
+  <option value="10:15">10:15 h.</option>
+  <option value="10:30">10:30 h.</option>
+  <option value="10:45">10:45 h.</option>
+  <option value="11:00">11:00 h.</option>
+  <option value="11:15">11:15 h.</option>
+  <option value="11:30">11:30 h.</option>
+  <option value="11:45">11:45 h.</option>
+  
 
-<p>Lorem ipsum dolor sit amet, <a href="http://prueba">consectetuer adipiscing elit</a>. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. <a href="http://prueba2">Fusce porta</a>. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id metus.</p>
+  </select>
+<br>
+<br>
+  Nitro sobrante :
+<select name="nitro" id="sobrante" > 
+  <option value="5">5CC.</option>
+  <option value="6">6CC.</option>
+  <option value="7">7CC.</option>
+  <option value="8">8CC</option>
+  <option value="9">9CC.</option>
+  <option value="10">10CC</option>
+  <option value="11">11CC</option>
+  <option value="12">12CC</option>
+  <option value="13">13CC</option>
+  <option value="14">14CC</option>
+  <option value="15">15CC</option>
+  <option value="16">16CC</option>
+  <option value="17">17CC</option>
+  <option value="18">18CC</option>
+  <option value="19">19CC</option>
+  <option value="20">20CC</option>
+  <option value="21">21CC</option>
+  <option value="22">22CC</option>
+  <option value="23">23CC</option>
+  <option value="24">24CC</option>
+  <option value="25">25CC</option>
+  <option value="26">26CC</option>
+  <option value="27">27CC</option>
+  <option value="28">28CC</option>
+  <option value="29">29CC</option>
+  <option value="30">30CC</option>
+  <option value="31">31CC</option>
+  <option value="32">32CC</option>
+  <option value="33">33CC</option>
+  <option value="34">34CC</option>
+  <option value="35">35CC</option>
+  <option value="36">36CC</option>
+  <option value="37">37CC</option>
+  <option value="38">38CC</option>
+  <option value="39">39CC</option>
+  <option value="40">40CC</option>
+  <option value="41">41CC</option>
+  <option value="42">42CC</option>
+  <option value="43">43CC</option>
+  <option value="44">44CC</option>
+  <option value="45">45CC</option> 
+  <option value="46">46CC</option>
+  <option value="47">47CC</option>
+  <option value="48">48CC</option>
+  <option value="49">49CC</option>
+  <option value="50CC">50CC</option>
 
-<p>Aenean at nisl. Maecenas egestas dapibus odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin consequat auctor diam. <a href="http://prueba">Ut bibendum blandit est</a>. Curabitur vestibulum. Nunc malesuada porttitor sapien. Aenean a lacus et metus venenatis porta. Suspendisse cursus, sem non dapibus tincidunt, lorem magna porttitor felis, id sodales dolor dolor sed urna. Sed rutrum nulla vitae tellus. Sed quis eros nec lectus tempor lacinia. Aliquam nec lectus nec neque aliquet dictum. Etiam <a href="http://prueba3">consequat sem quis massa</a>. Donec aliquam euismod diam. In magna massa, mattis id, pellentesque sit amet, porta sit amet, lectus. Curabitur posuere. Aliquam in elit. Fusce condimentum, arcu in scelerisque lobortis, ante arcu scelerisque mi, at cursus mi risus sed tellus.</p>
-
-<p>Donec sagittis, nibh nec ullamcorper tristique, pede velit feugiat massa, at sollicitudin justo tellus vitae justo. Vestibulum aliquet, nulla sit amet imperdiet suscipit, nunc erat laoreet est, a <a href="http://prueba">aliquam leo odio sed sem</a>. Quisque eget eros vehicula diam euismod tristique. Ut dui. Donec in metus sed risus laoreet sollicitudin. Proin et nisi non arcu sodales hendrerit. In sem. Cras id augue eu lorem dictum interdum. Donec pretium. Proin <a href="http://prueba4">egestas</a> adipiscing ligula. Duis iaculis laoreet turpis. Mauris mollis est sit amet diam. Curabitur hendrerit, eros quis malesuada tristique, ipsum odio euismod tortor, a vestibulum nisl mi at odio. <a href="http://prueba5">Sed non lectus non est pellentesque</a> auctor.</p>
+  
+  </select>
+<p id="sol"> Tiempo restante: ---</p>
+</div>
 </body>
+
 </html>
