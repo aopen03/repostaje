@@ -45,11 +45,28 @@ function anadir(){
     pes[0].innerHTML+="<br> Esto es otro párrafo nuevo";
 }
 function modifica_celda(){
-    console.log("Click en celda");
+    console.log("Click en celda 1");
     ele_li=document.createElement("li");
     ele_li.textContent="NUEVO";
-    document.body.insertBefore(ele_li,document.getElementById("ele1"));
+   // document.body.insertBefore(ele_li,document.getElementById("ele1"));
+   filas=document.getElementsByTagName("td");
+   console.log(filas[1].appendChild(ele_li));
+
 }
+
+function modifica_celda2(){
+    console.log("Click en celda 2");
+    ele_li=document.createElement("li");
+    ele_li.textContent="NUEVO 2";
+   // document.body.insertBefore(ele_li,document.getElementById("ele1"));
+   filas=document.getElementsByTagName("td");
+   
+  filas[3].appendChild(ele_li);
+  filas[3].
+   console.log(filas[3]);
+
+}
+
 
 window.onload = function cargar() {
     let tabla=document.getElementById("tabla");
@@ -98,6 +115,9 @@ window.onload = function cargar() {
     
    document.body.appendChild(tabla);
     document.getElementById('celda1').setAttribute("onclick", "modifica_celda()");
+    document.getElementById('celda2').setAttribute("onclick", "modifica_celda2()");
+
+    
    //No funciona ASÍ document.getElementById('celda1').addEventListener('mouseover',modifica_celda,false);
 
 
